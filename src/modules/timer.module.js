@@ -49,6 +49,6 @@ export class TimerModule extends Module {
             }
         }
 
-        let countdownTimer = setInterval('timer()', 1000);
+        let countdownTimer = setInterval(timer, 1000);
     }
 }
