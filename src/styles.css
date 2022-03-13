@@ -96,3 +96,19 @@ body {
     }
 
 }
+
+.close-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: cornflowerblue;
+    border: 1px solid #1b1a1a;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.close-button:hover {
+    color: #ffffff;
+    background-color: #336dd3;
+    transition: all 0.4s;
+}
