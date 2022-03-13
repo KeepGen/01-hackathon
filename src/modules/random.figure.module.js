@@ -1,5 +1,5 @@
 import { Module } from '../core/module'
-import { random } from '../utils'
+import { random, getRandomColor } from '../utils'
 
 export class RandomFigureModule extends Module {
     constructor(type, text){
@@ -22,6 +22,7 @@ export class RandomFigureModule extends Module {
         figures.width = `${random(50, 300)}px`
         figures.height = `${random(50, 200)}px`
         figures.borderRadius = `${random(10, 50)}%`;
+        figures.backgroundColor = getRandomColor();
         block.append(figure)
 
         document.body.append(block)
