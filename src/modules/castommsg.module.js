@@ -1,4 +1,4 @@
-import {Module} from '../core/module'
+import {Module} from '../core/module.js'
 
 
 export class CastomMsg extends Module {
@@ -15,13 +15,13 @@ export class CastomMsg extends Module {
         
         block.className = 'timerModal'
     
-        message.textContent = 'THIT IS HACATHON!!!'
+        const text = message.textContent = 'THIT IS HACATHON!!!'
         block.append(text)
     
         document.body.append(block)
     
         setTimeout(() => {
-            modal.remove()
+            block.remove()
         },3000)
 
     }
