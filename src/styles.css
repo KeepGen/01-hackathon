@@ -17,7 +17,7 @@ body {
 .menu {
     position: fixed;
     z-index: 1000;
-    width: 150px;
+    width: 230px;
     background: #1b1a1a;
     border-radius: 5px;
     display: none;
@@ -39,4 +39,76 @@ body {
 
 .menu .menu-item:hover {
     background: #343434;
+}
+
+
+.timerModal{
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+    height: 100px;
+    width: 200px;
+
+    border-radius: 6px;
+    background-color: rgba(236, 8, 8, 0.8);
+    color: white;
+
+    font-weight: 900;
+    animation: true 3s infinite;
+
+    top: 100px;
+    left: 100px;
+
+
+}
+
+.timerModal:hover{
+    background-color: rgba(236, 8, 8);
+
+}
+
+@keyframes true{
+    0%{
+        left: 250px;
+        transform: rotate(-7deg);
+        top: 0px;
+
+    }
+    15%{
+        left: -35px;
+        transform: rotate(5deg);
+
+    }
+    30%{
+        left: 180px;
+        transform: rotate(-5deg);
+    }
+    50%{
+        left: 0px;
+        transform: rotate(2deg);
+    }
+
+    100%{
+        top: 40vh;
+    }
+
+}
+
+.close-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: cornflowerblue;
+    border: 1px solid #1b1a1a;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.close-button:hover {
+    color: #ffffff;
+    background-color: #336dd3;
+    transition: all 0.4s;
 }
